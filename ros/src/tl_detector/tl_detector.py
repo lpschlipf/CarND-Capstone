@@ -60,7 +60,6 @@ class TLDetector(object):
         self.lights = msg.lights
 
     def image_cb(self, msg):
-
         self.has_image = True
         self.camera_image = msg
         light_wp, state = self.process_traffic_lights()
@@ -82,7 +81,6 @@ class TLDetector(object):
         return closest_idx
 
     def get_light_state(self, light):
-
         return light.state
 
     def process_traffic_lights(self):
