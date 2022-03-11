@@ -8,7 +8,7 @@ Project: System Integration(Capstone Project)
 |------------------------------------------------------------|
 | [Running Instructions](https://youtu.be/jFXJtOqvbUA)|
 
-In this project, we'll be writing ROS nodes to implement core functionality of the autonomous vehicle system, including traffic light detection, control, and waypoint following! We will test our code using a simulator that mimics the functionality on Carla.
+In this project, provide ROS nodes to for core functionality of an autonomous vehicle system which are traffic light detection, steering and throttle control and waypoint following. The structure and implementation of the code largely follows [this repository](https://github.com/snandasena/CarND-Capstone-System-Integration)
 
 #### System Architecture Diagram
 <img src="imgs/final-project-ros-graph-v2.png" width="1000" height="600" />
@@ -47,14 +47,3 @@ A package which loads the static waypoint data and publishes to `/base_waypoints
 ###### (path_to_project_repo)/ros/src/waypoint_follower/
 A package containing code from [Autoware](https://github.com/Autoware-AI/autoware.ai) which subscribes to `/final_waypoints` and publishes target vehicle linear and angular velocities in the form of twist commands to the `/twist_cmd` topic.
 
-### References
-* https://www.udacity.com/course/self-driving-car-engineer-nanodegree--nd013
-* http://ais.informatik.uni-freiburg.de/teaching/ss18/robotics/index_en.php
-* https://github.com/snandasena/path-plnaning-n-localization
-* https://thinkautonomous.medium.com/
-* http://wiki.ros.org/kinetic/Installation
-* https://github.com/gabfec/CarND-Capstone
-* https://rsl.ethz.ch/education-students/lectures/ros.html
-
-### Acknowledgments
-Big thank you to [Udacity](https://www.udacity.com) for providing the template code and simulator for this project.
